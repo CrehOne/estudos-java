@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		double A = sc.nextDouble();
+		double B = sc.nextDouble();
+		double C = sc.nextDouble();
+		
+		double triangulo = (A * C) / 2;
+		double circulo = 3.14159 * (Math.pow(C, 2));
+		double trapezio = (A * B) / 2 * C;
+		double quadrado = Math.pow(B, 2);
+		double retangulo = A * B;
+		
+		System.out.println("TRIANGULO: " + triangulo);
+		System.out.println("CIRCULO: " + circulo);
+		System.out.println("TRAPEZIO: " + trapezio);
+		System.out.println("QUADRADO: " + quadrado);
+		System.out.println("RETANGULO: " + retangulo);
+		
+		sc.close();
+
+	}
+
+}
